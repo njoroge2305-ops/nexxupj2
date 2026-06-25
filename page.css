@@ -1,0 +1,162 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* UPDATED: High-quality golden sunset forest background */
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)),
+        url('https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT0OSCMffSArX1ROU5UMhxWNr7XBQt5HglCLdMJYAlbb6CM3GJnKDDIVVp1pDVaLOAxlOgLrsKQplgn-XU') no-repeat center center/cover;
+    overflow: hidden;
+}
+
+/* Glassmorphism Login Container */
+.login-container {
+    position: relative;
+    width: 400px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Input Styles */
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #ff7e5f;
+    /* Sunset coral accent */
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.input-group label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+/* Floating Label Logic */
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: -12px;
+    left: 5px;
+    font-size: 12px;
+    color: #ff7e5f;
+    font-weight: bold;
+}
+
+/* Forgot Password & Options */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.options label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.options a {
+    color: #ff7e5f;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.options a:hover {
+    text-decoration: underline;
+    color: #feb47b;
+}
+
+/* Button Style */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(255, 126, 95, 0.4);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 126, 95, 0.6);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Error Message Style */
+.error-message {
+    color: #ff4d4d;
+    font-size: 13px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    display: none;
+    text-align: center;
+}
+
+/* Footer Links */
+.footer-text {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-text a {
+    color: #ff7e5f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
