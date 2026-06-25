@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Border -->
+    <div class="page-border">
+
+        <!-- Navigation -->
+        <nav>
+            <h2>George<span>Dev</span></h2>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#ai">AI Assistant</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="hero-text" data-aos="fade-right">
+                <h1>Hello, we are <br><span>NEXXUPJ DEVELOPERS</span></h1>
+                <h3>Full Stack DeveloperS and ICT Technicians</h3>
+
+                <p>
+                    I create modern, interactive and responsive web experiences.
+                </p>
+
+                <a href="https://wa.me/254718646979?text=Hello,%20I%20would%20like%20to%20join." target="_blank"
+                    class="join-btn">
+                    Join Us on WhatsApp
+                </a>
+            </div>
+
+
+            <div class="hero-image" data-aos="fade-left">
+
+                <!-- Replace with your image -->
+                <div class="image-frame">
+                    <img src="81b92cd53e30d406dc2fe6201f7ac362.jpg" alt="profile">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- About -->
+        <section id="about" class="about" data-aos="fade-up">
+
+            <h2>About us</h2>
+
+            <p>
+                Passionate software developers and ICT Technicians with strong skills in
+                web development,Networking ,cyber security and a 24/7 website hosting to prevent down time in your
+                website.
+            </p>
+            <p>
+                .We are also graduates from The Nairobi National Polytechnic
+            </p>
+
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="skills">
+
+            <h2>Our Skills</h2>
+
+            <div class="skill">
+                <p>HTML</p>
+                <div class="bar"><span style="width:95%"></span></div>
+            </div>
+
+            <div class="skill">
+                <p>CSS</p>
+                <div class="bar"><span style="width:95%"></span></div>
+            </div>
+
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="bar"><span style="width:95%"></span></div>
+            </div>
+
+            <div class="skill">
+                <p>Python</p>
+                <div class="bar"><span style="width:90%"></span></div>
+            </div>
+
+            <div class="skill">
+                <p>Network Engineer</p>
+                <div class="bar"><span style="width:90%"></span>
+                    <div>
+                    </div>
+
+                    <div class="skill">
+                        <p>Cyber Security</p>
+                        <div class="bar"><span style="width: 90;"></span></div>
+                    </div>
+
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="projects">
+
+            <h2>Projects</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="">
+                    <h3>Professional webdesign</h3>
+                    <p>Professional web design with both front-end and back-end and also cyber security.</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="">
+                    <h3>Machine repair</h3>
+                    <p>Computer maintain,repair and set up simple to complex computer systems and also Networking
+                        sevices.</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="">
+                    <h3>learn programming</h3>
+                    <p> learn programming languages like HTml,CSS,JavaScript,python e.tc .</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- AI Assistant -->
+        <section id="assistant">
+
+            <h2 class="section-title">AI Assistant</h2>
+
+            <div class="chat-container">
+
+                <div class="chat-box" id="chatBox">
+
+                    <div class="bot-message">
+                        Hello! I am George's AI Assistant. Ask me about skills, projects or experience.
+                    </div>
+
+                </div>
+
+                <div class="chat-input">
+
+                    <input type="text" id="userInput" placeholder="Ask me something..." onkeypress="handleEnter(event)">
+
+                    <button onclick="sendMessage()">
+                        Send
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact">
+
+            <h3>Contact Me</h3>
+
+            <div class="socials">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-tiktok"></i>
+                <i class="fab fa-facebook"></i>
+                <p>call +254 7186 469 79 for more info</p>
+            </div>
+
+            <p>© 2026 George Njoroge | All Rights Reserved</p>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
